@@ -17,9 +17,9 @@ public class TimeStats
     public double DeadPlaytime { get; set; } = 0.0; // 6
     public string LastPlayDate { get; set; } = DateTime.Now.ToString("yyyy-MM-dd"); // 7
     public double TodayPlaytime { get; set; } = 0.0; // 8
-    public long LastUpdateTime; // 9
-
-    public void UpdatePlaytime(bool isAlive, CsTeam currentTeam)
+    public long LastUpdateTime;
+    bool isAlive = false;
+    public void UpdatePlaytime(CsTeam currentTeam)
     {
         long currentTime = DateTimeOffset.Now.ToUnixTimeSeconds();
 
@@ -55,7 +55,7 @@ public class TimeStats
         }
 
         // Atualiza o tempo jogado vivo ou morto
-        if (isAlive)
+        if (this.isAlive)
         {
             AlivePlaytime = Math.Round(AlivePlaytime + sessionDurationMinutes, 2);
         }

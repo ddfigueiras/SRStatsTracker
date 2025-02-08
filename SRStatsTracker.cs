@@ -34,11 +34,15 @@ public class SRStatsTracker : BasePlugin, IPluginConfig<DbConfig>
     public override void Load(bool hotReload)
     {
         basePlugin = this;
-
+        // Registering events
         RegisterEventHandler<EventPlayerSpawn>(OnPlayerSpawn);
         RegisterEventHandler<EventPlayerDeath>(OnPlayerDeath);
         RegisterEventHandler<EventPlayerTeam>(OnPlayerTeam);
 
+        RegisterListener<Listeners.OnMapStart>(OnMapStart);
+        RegisterListener<Listeners.OnMapEnd>(OnMapEnd);
+        RegisterEventHandler<EventRoundPrestart>(OnRoundPrestart);
+        RegisterEventHandler<EventPlayerSpawn>(OnPlayerSpawn, HookMode.Post);
         //AddTimer(10.0f, OnRewardTimer, TimerFlags.REPEAT);
 
         if (hotReload)
@@ -71,7 +75,7 @@ public class SRStatsTracker : BasePlugin, IPluginConfig<DbConfig>
         SRPlayer p = new SRPlayer(@event.Userid!);
         if (p != null && p.IsValid())
         {
-            p.timeStats.UpdatePlaytime(true, p.GetTeam());
+            p.OnPlayerSpawn();
         }
         return HookResult.Continue;
     }
@@ -83,7 +87,7 @@ public class SRStatsTracker : BasePlugin, IPluginConfig<DbConfig>
         SRPlayer p = new SRPlayer(@event.Userid!);
         if (p != null && p.IsValid())
         {
-            p.timeStats.UpdatePlaytime(true, p.GetTeam());
+            p.OnPlayerDeath();
         }
         return HookResult.Continue;
     }
@@ -96,7 +100,7 @@ public class SRStatsTracker : BasePlugin, IPluginConfig<DbConfig>
         if (p != null && p.IsValid())
         {
             CsTeam team = (CsTeam)@event.Team;
-            p.timeStats.UpdatePlaytime(team == CsTeam.Spectator, team);
+            p.timeStats.UpdatePlaytime(team);
         }
         return HookResult.Continue;
     }

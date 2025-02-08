@@ -74,4 +74,14 @@ public class SRPlayer
         if (!IsValid()) return;
         controller.ExecuteClientCommand($"play {sound}");
     }
+    public void OnPlayerDeath()
+    {
+        timeStats.isAlive = false;
+        timeStats.UpdatePlaytime(GetTeam());
+    }
+    public void OnPlayerSpawn()
+    {
+        timeStats.isAlive = true;
+        timeStats.UpdatePlaytime(GetTeam());
+    }
 }
