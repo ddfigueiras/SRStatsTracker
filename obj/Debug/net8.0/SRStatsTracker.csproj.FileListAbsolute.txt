@@ -1,0 +1,14 @@
+C:\steamcmd\cs2-ds\game\csgo\addons\counterstrikesharp\source\AGithubProjects\SRStatsTracker\bin\Debug\net8.0\SRStatsTracker.deps.json
+C:\steamcmd\cs2-ds\game\csgo\addons\counterstrikesharp\source\AGithubProjects\SRStatsTracker\bin\Debug\net8.0\SRStatsTracker.dll
+C:\steamcmd\cs2-ds\game\csgo\addons\counterstrikesharp\source\AGithubProjects\SRStatsTracker\bin\Debug\net8.0\SRStatsTracker.pdb
+C:\steamcmd\cs2-ds\game\csgo\addons\counterstrikesharp\source\AGithubProjects\SRStatsTracker\bin\Debug\net8.0\CounterStrikeSharp.API.dll
+C:\steamcmd\cs2-ds\game\csgo\addons\counterstrikesharp\source\AGithubProjects\SRStatsTracker\obj\Debug\net8.0\SRStatsTracker.csproj.AssemblyReference.cache
+C:\steamcmd\cs2-ds\game\csgo\addons\counterstrikesharp\source\AGithubProjects\SRStatsTracker\obj\Debug\net8.0\SRStatsTracker.GeneratedMSBuildEditorConfig.editorconfig
+C:\steamcmd\cs2-ds\game\csgo\addons\counterstrikesharp\source\AGithubProjects\SRStatsTracker\obj\Debug\net8.0\SRStatsTracker.AssemblyInfoInputs.cache
+C:\steamcmd\cs2-ds\game\csgo\addons\counterstrikesharp\source\AGithubProjects\SRStatsTracker\obj\Debug\net8.0\SRStatsTracker.AssemblyInfo.cs
+C:\steamcmd\cs2-ds\game\csgo\addons\counterstrikesharp\source\AGithubProjects\SRStatsTracker\obj\Debug\net8.0\SRStatsTracker.csproj.CoreCompileInputs.cache
+C:\steamcmd\cs2-ds\game\csgo\addons\counterstrikesharp\source\AGithubProjects\SRStatsTracker\obj\Debug\net8.0\SRStatsT.28D625C9.Up2Date
+C:\steamcmd\cs2-ds\game\csgo\addons\counterstrikesharp\source\AGithubProjects\SRStatsTracker\obj\Debug\net8.0\SRStatsTracker.dll
+C:\steamcmd\cs2-ds\game\csgo\addons\counterstrikesharp\source\AGithubProjects\SRStatsTracker\obj\Debug\net8.0\refint\SRStatsTracker.dll
+C:\steamcmd\cs2-ds\game\csgo\addons\counterstrikesharp\source\AGithubProjects\SRStatsTracker\obj\Debug\net8.0\SRStatsTracker.pdb
+C:\steamcmd\cs2-ds\game\csgo\addons\counterstrikesharp\source\AGithubProjects\SRStatsTracker\obj\Debug\net8.0\ref\SRStatsTracker.dll
